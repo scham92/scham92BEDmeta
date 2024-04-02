@@ -81,18 +81,15 @@ WSGI_APPLICATION = 'littlelemon.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
+# from fullstack exc 1
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'LittleLemon',
-        'USER': 'django',
-        'PASSWORD': 'password', # insecure, but good enough for this projects :)
+        'NAME': 'reservations',
         'HOST': '127.0.0.1',
         'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
+        'USER': 'admindjango',
+        'PASSWORD': 'employee@123!',
     }
 }
 
